@@ -102,7 +102,7 @@ public class StringUtil {
 	 */
 	public static boolean isNumber(String str){
 		boolean blank = StringUtil.isEmpty(str);
-		if(blank){
+		if(blank!=true){
 			Pattern pattern = Pattern.compile("^\\d*$");
 			Matcher matcher = pattern.matcher(str);
 			if(matcher.matches()){
